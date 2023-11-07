@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bootstrap -->
+    <script src="../css/bootstrap-5.3.0-dist/js/popper.min.js"></script>
+    <script src="../css/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="../js/contact.js"></script>
+        <!-- incluye el fichero JavaScript con la programación -->
+    <title>Banco internacional</title>
+</head>
+
+<body class="bg-dark">
+    <h1 style="color: aliceblue; text-align: center;">Banco internacional</h1>
+
+    <!--Definir el contenedor con 5p de espacio en el margen superior-->
+    <div class="container p-2">
+        <!--Definir un componente card para ubicar todo el formulario-->
+        <div class="card mx-3 mt-n5 shadow-lg"
+            style="border-radius: 10px; border-left:8px #007bff solid; border-right: none; border-top:none; border-bottom:none">
+            <!--Definir un componente card para ubicar el cuerpo del formulario-->
+            <div class="card-body">
+                <!--Definir titulo del formulario-->
+                <h4 class="card-title mb-3 text-primary text-uppercase">Formulario de contacto</h4>
+                <!--Definir el formulario-->
+                <form  name="fcontact" onsubmit="processContactForm(event,'fcontact')" target="_blank"
+                    method="get">
+                    <!--Definir semento con la clase fila-->
+                    <div class="row">
+                        <!--Definir semento con la clase columna-->
+                        <div class="col">
+                            <label for="fnames">Nombres</label>
+                            <input class="form-control" type="text" id="fnames">
+                        </div>
+                        <div class="col">
+
+                            <label for="fsurname">Apellidos</label>
+                            <input class="form-control" type="text" name="" id="fsurname">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="fphone">Númeo de teléfono</label>
+                            <input class="form-control" type="text" name="" id="fphone">
+                        </div>
+                        <div class="col">
+                            <label for="femail">Email</label>
+                            <input class="form-control" type="text" name="" id="femail">
+                        </div>
+                        <div class="col">
+                            <label for="fcity">Ciudad</label>
+                            <input class="form-control" type="text" name="" id="fcity">
+                        </div>
+                        <div class="col">
+                            <label for="fcountry">País</label>
+                            <input class="form-control" type="text" name="" id="fcountry">
+                        </div>
+                    </div>
+                    <br>
+
+                    <div>
+                        <button class="btn btn-primary" style="border-radius:0px" type="submit">Guardar</button>
+                        <button class="btn btn-danger" style="border-radius:0px"
+                        onclick="window.location.href='../index.html'" type="button">Cancelar</button>
+                       
+                    </div>
+              
+               
+                </form>
+
+             
+               
+              
+              
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
